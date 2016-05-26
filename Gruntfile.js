@@ -47,8 +47,8 @@
     ]);
 
     grunt.registerTask('prod', [
-      'lint',
-      'cssmin',
+      // 'lint',
+      // 'cssmin',
       'uglify'
     ]);
   };
