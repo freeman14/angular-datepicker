@@ -101,13 +101,13 @@
 
       return [
         '<div class="_720kb-datepicker-calendar-body">',
-          '<a href="javascript:void(0)" ng-repeat="px in prevMonthDays" class="_720kb-datepicker-calendar-day _720kb-datepicker-disabled">',
+          '<a href="javascript:void(0)" ng-repeat="px in prevMonthDays" class="_720kb-datepicker-px _720kb-datepicker-calendar-day _720kb-datepicker-disabled">',
             '{{px}}',
           '</a>',
           '<a href="javascript:void(0)" ng-repeat="item in days" ng-click="setDatepickerDay(item)" ng-class="{\'_720kb-datepicker-active\': day === item, \'_720kb-datepicker-disabled\': !isSelectableMinDate(year + \'/\' + monthNumber + \'/\' + item ) || !isSelectableMaxDate(year + \'/\' + monthNumber + \'/\' + item) || !isSelectableDate(monthNumber, year, item)}" class="_720kb-datepicker-calendar-day">',
             '{{item}}',
           '</a>',
-          '<a href="javascript:void(0)" ng-repeat="nx in nextMonthDays" class="_720kb-datepicker-calendar-day _720kb-datepicker-disabled">',
+          '<a href="javascript:void(0)" ng-repeat="nx in nextMonthDays" class="_720kb-datepicker-nx _720kb-datepicker-calendar-day _720kb-datepicker-disabled">',
             '{{nx}}',
           '</a>',
         '</div>'
